@@ -1,0 +1,40 @@
+body{
+    color: white;
+    font-size: 20px;
+}
+
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxHead {
+    height: 150px;
+    margin: 10px;
+}
+
+.boxCenters {
+    height: 150px;
+    margin: 10px;
+    justify-content: space-between;
+}
+
+.boxCenter {
+    width: 30%;
+    height: 150px;
+
+}
+
+.boxFooter {
+    height: 300px;
+    margin: 10px;
+}
+
+.blue {
+    background-color: rgb(53, 106, 181);
+}
+
+.darkBlue {
+    background-color: rgb(34, 69, 118);
+}
