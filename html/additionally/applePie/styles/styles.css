@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+}
+
+@font-face {
+    font-family: Oswald;
+    src: url("../fonts/Oswald-VariableFont_wght.ttf") format("truetype");
+}
+
+.topic {
+    margin-top: 140px;
+    text-align: center;
+    font-family: Oswald, sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+
+.imgIngredient {
+    display: flex;
+    justify-content: space-around;
+    margin: 60px 46px 0 46px;
+    flex-wrap: wrap;
+}
+
+.imgPie{
+    width: 864px;
+}
+
+.ingredient{
+    font-family: Oswald, sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.algorithm{
+    background-color: rgba(217, 217, 217, 0.3);
+    font-family: Oswald, sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    margin: 87px 46px 79px 46px;
+    padding-left: 15px;
+}
