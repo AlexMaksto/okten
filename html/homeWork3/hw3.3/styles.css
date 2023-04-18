@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#red {
+    width: 100vw;
+    height: 100vh;
+    background-color: red;
+}
+
+#blue {
+    width: 100vw;
+    height: 100vh;
+    background-color: blue;
+}
+
+#green {
+    width: 100vw;
+    height: 100vh;
+    background-color: green;
+}
+img{
+    height: 20vh;
+}
+
+html {
+    scroll-behavior: smooth;
+}

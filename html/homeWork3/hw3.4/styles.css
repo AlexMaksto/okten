@@ -1,0 +1,24 @@
+body {
+    margin: 0
+}
+
+header {
+    width: 100vw;
+    height: 50vh;
+    background-color: #FEC1CB;
+}
+
+footer {
+    width: 100vw;
+    height: 50vh;
+    background-color: #272727;
+    color: white;
+}
+
+.view{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}

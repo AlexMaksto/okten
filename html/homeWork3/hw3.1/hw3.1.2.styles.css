@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+}
+
+p {
+    display: flex;
+    margin: 0;
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    font-size: 3vh;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    background-color: #D9D9D9;
+    height: 10vh;
+}
+
+div {
+    display: flex;
+    height: 80vh;
+    justify-content: space-around;
+}
+
+.section1 {
+    background-color: #A9A8A8;
+    width: 33.33vw;
+}
+
+.section2 {
+    background-color: #817B7B;
+    width: 33.33vw;
+}
+
+.section3 {
+    background-color: #544F4F;
+    width: 33.33vw;
+}
+
+footer {
+    background-color: #B8B3B3;
+    height: 10vh;
+}

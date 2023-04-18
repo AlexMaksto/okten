@@ -1,0 +1,36 @@
+body {
+    margin: 0 auto
+}
+
+.head {
+    display: flex;
+    flex: 1;
+    height: 250px;
+    background-color: #D9D9D9;
+}
+
+.centres {
+    display: flex;
+    height: 605px;
+}
+
+.centre1 {
+    flex: 1;
+    background-color: #CCCCCC;
+}
+
+.centre2 {
+    flex: 1;
+    background-color: #848383;
+}
+
+.centre3 {
+    flex: 1;
+    background-color: #656565;
+}
+.footer{
+    display: flex;
+    flex: 1;
+    height: 262px;
+    background-color: #ACABAB;
+}

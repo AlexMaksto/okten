@@ -1,0 +1,40 @@
+body {
+    margin: 0 auto;
+}
+
+.head {
+    display: flex;
+    flex: 1;
+    height: 279.25px;
+    background-color: #D9D9D9;
+}
+
+.centres {
+    display: flex;
+    height: 838px;
+}
+
+.centre1 {
+    flex: 5;
+    background-color: #909090;
+}
+
+.centre2 {
+    flex: 4;
+    background-color: #645F5F;
+}
+
+.centre3 {
+    flex: 3;
+    background-color: #A59D9D;
+}
+
+.centre4 {
+    flex: 2;
+    background-color: #878585;
+}
+
+.centre5 {
+    flex: 1;
+    background-color: #4E4444;
+}
