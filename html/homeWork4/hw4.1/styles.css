@@ -1,0 +1,50 @@
+body {
+    margin: 0 auto;
+    font-size: 18px;
+}
+
+section {
+    display: flex;
+    border: 1px solid gainsboro;
+    width: 400px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 15px auto;
+    text-align: center;
+}
+
+img {
+    margin: 40px;
+    width: 200px
+}
+
+.field {
+    border: 1px solid #DBDBDB;
+    background-color: #FAFAFA;
+    width: 300px;
+    height: 40px;
+    margin: 5px auto;
+    padding-left: 10px;
+    border-radius: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: #3C5181;
+}
+
+#blue {
+    color: #3E95EF;
+}
+
+#submit {
+    margin-top: 10px;
+    height: 35px;
+    width: 310px;
+    border-radius: 10px;
+    color: white;
+    background-color: #79B4F4;
+    border: 0;
+    font-size: 20px;
+}
