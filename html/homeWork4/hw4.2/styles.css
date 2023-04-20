@@ -1,7 +1,11 @@
 body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: 'Raleway', sans-serif;
     background-color: darkcyan;
     margin: 0 auto;
+    height: 100vh;
 }
 
 section {
@@ -11,8 +15,7 @@ section {
     border-radius: 5px;
     width: 500px;
     height: 300px;
-    margin: 20vh auto;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
 }
 
@@ -34,19 +37,21 @@ form {
     justify-content: flex-start;
     align-items: center;
 }
-.enter{
+
+.enter {
     margin-top: 10px;
     width: 400px;
     display: flex;
     justify-content: space-between;
 }
 
-.field{
+.field {
     width: 400px;
     height: 30px;
     margin: 10px;
 }
-#submit{
+
+#submit {
     background-color: #EBF3F3;
     width: 100px;
     height: 30px;

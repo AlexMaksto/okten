@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<section>
+    <h1>Заповніть поля анкети</h1>
+    <form>
+        <div class="block">
+            <label class="userName">Ваше ім'я: <input type="text" name="" required></label>
+            <label class="userName">Ваше прізвище: <input type="text" name="" required></label>
+        </div>
+        <div class="block">
+            <label>Ваша стать:</label>
+            <label><input type="radio" name="sex" value="female"> Жіноча</label>
+            <label><input type="radio" name="sex" value="male"> Чоловіча</label>
+        </div>
+        <label class="block">Послугами якої сотової компанії Ви користуєтеся:</label>
+        <div class="block" style="margin-top: 0">
+            <label><input type="checkbox" name="">KyivStar</label>
+            <label><input type="checkbox" name="">MTS</label>
+            <label><input type="checkbox" name="">Life:)</label>
+            <label><input type="checkbox" name="">PeopleNet</label>
+            <label><input type="checkbox" name="">Utel</label>
+        </div>
+        <div class="block">
+            <input type="submit" class="button" value="Надіслати анкету">
+            <input type="reset" class="button" value="Очистити бланк">
+        </div>
+    </form>
+</section>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    height: 100vh;
+    background-color: #DBFBDA;
+}
+
+section {
+    background-color: #99FB98;
+    height: auto;
+    padding: 10px;
+    width: 400px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    color: #F50A11;
+    text-align: center;
+}
+
+.block {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+
+.userName {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.button{
+    width: 40%;
+    height: 30px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #3D6FB4;
+    color: white;
+}
