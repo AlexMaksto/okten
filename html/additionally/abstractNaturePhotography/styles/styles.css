@@ -1,0 +1,133 @@
+body {
+    font-family: 'KoHo', sans-serif;
+    margin: 0 auto;
+}
+
+section {
+    background-image: url("../media/image 4.png");
+    background-size: cover;
+    height: 100vh;
+}
+
+.transparentSection {
+    background-image: url("../media/Rectangle 4.png");
+}
+
+/*-------------------- First section --------------------*/
+.firstSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.firstBlock {
+    display: flex;
+    width: 70%;
+    height: 40%;
+    background-color: #FAF9F7;
+}
+
+
+.firstContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+
+.firstH1 {
+    font-size: 2.98vw;
+    font-style: normal;
+    font-weight: 400;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 5.6% 0;
+}
+
+.firstP {
+    font-size: 1.65vw;
+    font-style: normal;
+    font-weight: 400;
+    margin: 5.6% 0;
+}
+
+.firstButton {
+    width: 77.32%;
+    height: 19.35%;
+    text-align: center;
+    font-size: 1.98vw;
+    font-style: normal;
+    font-weight: 400;
+    margin: 5.6% 0;
+
+    background: rgba(217, 217, 217, 0.6);
+    border: 1px solid rgba(156, 152, 152, 0.1);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+
+.firstButton:active {
+    background-color: red;
+}
+
+/*-------------------- Second section --------------------*/
+.secondSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+iframe {
+    width: 50vh;
+    height: 50vh;
+    margin: 5.15% 0;
+}
+
+.secondContent {
+    width: 62.76%;
+    margin: 5.15% 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.31vw;
+}
+
+/*-------------------- Third section --------------------*/
+
+.thirdSection{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.thirdContent{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgba(83, 83, 83, 0.4);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.31vw;
+    padding: 22px;
+}
+
+.button{
+    color: #6B6666;
+    background: rgba(217, 217, 217, 0.6);
+    border: 1px solid rgba(156, 152, 152, 0.1);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    height: 76px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.31vw;
+    padding: 22px;
+}
+
+.button:active {
+    background-color: red;
+}
