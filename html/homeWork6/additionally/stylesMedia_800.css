@@ -1,0 +1,15 @@
+@media screen and (max-width: 800px) {
+    body {
+        grid-template-areas:
+        "a a a"
+        "b c d"
+        "e f g"
+        "h h h";
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr) 2fr;
+    }
+
+    div {
+        background-color: #DBFBDA;
+    }
+}

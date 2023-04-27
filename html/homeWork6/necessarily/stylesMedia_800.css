@@ -1,0 +1,27 @@
+@media screen and (max-width: 800px) {
+    div {
+        background-color: #DBFBDA;
+    }
+
+    .a {
+        height: 10vh;
+    }
+
+    .center {
+        flex-direction: column;
+        height: 90vh;
+    }
+
+    .f {
+        height: 10vh;
+        width: 100vw;
+    }
+
+    .b {
+        height: 70vh;
+    }
+
+    .three {
+        height: 10vh;
+    }
+}
