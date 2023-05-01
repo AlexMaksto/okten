@@ -1,0 +1,27 @@
+let hello = 'hello';
+let owu = 'owu';
+let com = 'com';
+let ua = 'ua';
+let one = 1;
+let ten = 10;
+let threeNine = -999;
+let number = 123;
+let pi = 3.14;
+let doubleNumber = 2.7;
+let sixteen = 16;
+let bool = true;
+let bool2 = false;
+
+console.log(hello);
+console.log(owu);
+console.log(com);
+console.log(ua);
+console.log(one);
+console.log(ten);
+console.log(threeNine);
+console.log(number);
+console.log(pi);
+console.log(doubleNumber);
+console.log(sixteen);
+console.log(bool);
+console.log(bool2);
