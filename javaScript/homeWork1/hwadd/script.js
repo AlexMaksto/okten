@@ -1,11 +1,11 @@
 let firstName;
 let middleName;
-let lastName;
+let age;
 
 firstName = prompt('Enter first name:');
 middleName = prompt('Enter middle name:');
-lastName = prompt('Enter last name:');
+age = +prompt('Enter age:');
 
-let person = `${firstName} ${middleName} ${lastName}`;
+let person = `${firstName} ${middleName} ${age}`;
 
 console.log(person);
