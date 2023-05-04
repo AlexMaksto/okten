@@ -14,8 +14,6 @@ const arrayUsers = [
     user10 = {name: 'Ivan', username: 'user1', password: 'password10'}
 ];
 
-//Питання до перевіряючого. Яким способом краще обробляти такі ситуації? По елементу масиву, чи по об'єкту? Дякую :)
-
 console.log(user1.password);
 console.log(user2.password);
 console.log(user3.password);

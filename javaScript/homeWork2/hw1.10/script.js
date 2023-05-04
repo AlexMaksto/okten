@@ -11,8 +11,14 @@
 // let x = NaN;
 let x = "";
 
+// let x = [false, "false", 0, '0', undefined, null, NaN, ''];
+
 if (x === false || x === 'false' || x == 0 || x === undefined || x === null || isNaN(x) || x === '') {
     x = 'default';
 }
 
 console.log(x)
+
+// for (let i = 0; i < x.length; i++) {
+//     console.log(x[i] || 'default')
+// }
