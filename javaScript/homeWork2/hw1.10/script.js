@@ -3,17 +3,15 @@
 // (хибноподібні, тобто приводиться до false)
 
 // let x = false;
-// let x = "false";
 // let x = 0;
-// let x = '0';
 // let x = undefined;
 // let x = null;
 // let x = NaN;
 let x = "";
 
-// let x = [false, "false", 0, '0', undefined, null, NaN, ''];
+// let x = [false, 0, undefined, null, NaN, ''];
 
-if (x === false || x === 'false' || x == 0 || x === undefined || x === null || isNaN(x) || x === '') {
+if (x === false || x === 0 || x === undefined || x === null || isNaN(x) || x === '') {
     x = 'default';
 }
 
