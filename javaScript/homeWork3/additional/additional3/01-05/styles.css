@@ -1,0 +1,11 @@
+body{
+    display: flex;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+div{
+    text-align: center;
+    margin: 20px;
+    width: 200px;
+}
