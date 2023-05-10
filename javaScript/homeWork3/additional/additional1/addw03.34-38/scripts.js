@@ -23,9 +23,9 @@ const books = [
 /* знайти наібльшу книжку. */
 {
     console.log('знайти наібльшу книжку.')
-    let tempBook = '';
+    let tempBook;
     for (const book of books) {
-        if (tempBook == null) {
+        if (!tempBook) {
             tempBook = book;
         }
         if (book.pages > tempBook.pages) {
