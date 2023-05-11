@@ -1,5 +1,5 @@
 function randomNumber(endNumber = 10, startNumber = 1) {
-    return Math.floor(Math.random() * (endNumber - startNumber + 1)) + startNumber;
+    return Math.round(Math.random() * (endNumber - startNumber + 1)) + startNumber;
 }
 
 function makeArrays(size = randomNumber()) {
@@ -22,6 +22,7 @@ function areaRectangle(a, b) {
 }
 
 console.log();
+
 /* створити функцію яка обчислює та повертає площу кола з радіусом r */
 function areaCircles(r) {
     const PI = Math.PI;
@@ -34,6 +35,7 @@ function areaCircles(r) {
 }
 
 console.log();
+
 /* створити функцію яка обчислює та повертає площу циліндру висотою h, та радіусом r */
 function areaCylinder(h, r) {
     const PI = Math.PI;
@@ -47,6 +49,7 @@ function areaCylinder(h, r) {
 }
 
 console.log();
+
 /* створити функцію яка приймає масив та виводить кожен його елемент */
 function consoleArrays(arrays) {
     console.log(`Arrays have ${arrays.length} symbol`)
@@ -54,9 +57,11 @@ function consoleArrays(arrays) {
         console.log(`index ${i} value: ${arrays[i]}`);
     }
 }
+
 consoleArrays(makeArrays());
 
 console.log();
+
 /* створити функцію яка повертає найменьше число з масиву */
 function minNumber(arrays) {
     let min = arrays[0];
@@ -75,6 +80,7 @@ function minNumber(arrays) {
 }
 
 console.log();
+
 /* Створити функцію sum(arr)яка приймає масив чисел, сумує значення елементів масиву та повертає його.
     Приклад sum([1,2,10]) //->13 */
 function sum(arr) {
@@ -92,6 +98,7 @@ function sum(arr) {
 }
 
 console.log();
+
 /*  Cтворити функцію swap(arr,index1,index2). Функція міняє місцями значення у відповідних індексах
     Приклад  swap([11,22,33,44],0,1) //=> [22,11,33,44] */
 function swap(arr, index1, index2) {
@@ -112,6 +119,7 @@ function swap(arr, index1, index2) {
 }
 
 console.log();
+
 /*  Написати функцію обміну валюти exchange(sumUAH,currencyValues,exchangeCurrency)
     Приклад exchange(10000,[{currency:'USD',value:40},{currency:'EUR',value:42}],'USD') // => 250
 */
