@@ -1,12 +1,12 @@
 /* Створити функцію яка створює параграф з текстом. Текст задати через аргумент */
-function makeParagraph(text) {
-    document.write(`<p>${text}</p>`);
+const makeParagraph = text => document.write(`<p>${text}</p>`);
+
+{
+    makeParagraph(`ВСЕ ЗРОБИТИ СТРІЛОЧНИМИ ФУНКЦІЯМИ!`)
+    makeParagraph('Створити функцію яка створює параграф з текстом. Текст задати через аргумент');
 }
-
-makeParagraph('Створити функцію яка створює параграф з текстом. Текст задати через аргумент');
-
 /* Створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий */
-function makeUl(text) {
+const makeUl = text =>
     document.write(`
         <ul>
             <li>${text}</li>
@@ -14,24 +14,25 @@ function makeUl(text) {
             <li>${text}</li>
         </ul>
                     `);
-    // document.write(`<ul>`);
-    // for (let i = 0; i < 3; i++) {
-    // //     document.write(`<li>${text}</li>`)
-    // // }
-    // document.write(`</ul>`);
-}
+// document.write(`<ul>`);
+// // for (let i = 0; i < 3; i++) {
+// //     document.write(`<li>${text}</li>`)
+// // }
+// document.write(`</ul>`);
 
-makeUl(`Створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий`);
+{
+    makeUl(`Створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий`);
+}
 
 /*  Створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий.
     Кількість li визначається другим аргументом, який є числовим (тут використовувати цикл) */
-function makeUCount(text, countLi = 3) {
+const makeUCount = (text, countLi = 3) => {
     document.write(`<ul>`);
     for (let i = 0; i < countLi; i++) {
         document.write(`<li>${text}</li>`)
     }
     document.write(`</ul>`);
-}
+};
 
 {
     const countLi = 3;
@@ -40,13 +41,13 @@ function makeUCount(text, countLi = 3) {
 }
 
 /* Створити функцію яка приймає масив примітивних елементів (числа,стрінги,булеві), та будує для них список */
-function ulArrays(arrays) {
+const ulArrays = arrays => {
     document.write(`<ul>`);
     for (const item of arrays) {
         document.write(`<li>${item}</li>`)
     }
     document.write(`</ul>`);
-}
+};
 
 {
     const arrays = [5, "Hello", true, 7, "World"];
@@ -55,11 +56,11 @@ function ulArrays(arrays) {
 
 /*  Створити функцію яка приймає масив об'єктів з наступними полями id,name,age , та виводить їх в документ.
     Для кожного об'єкту окремий блок.*/
-function userInfo(users) {
+const userInfo = users => {
     for (const user of users) {
         document.write(`<div>Name: ${user.name}, age: ${user.age}</div>`);
     }
-}
+};
 
 {
     let users = [
