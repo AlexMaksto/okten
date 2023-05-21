@@ -39,7 +39,7 @@ console.log();
         Є "брудна" стрінга let str = ' dirty string   ' . Почистити її від зайвих пробілів.
      */
     console.log(`Є "брудна" стрінга let str = ' dirty string   ' . Почистити її від зайвих пробілів.`);
-    let str = ' dirty string   ';
+    let str = ' dirty   string   ';
     str = str.trim().replaceAll('  ', ' ');
     console.log(str);
 }
@@ -166,8 +166,7 @@ let coursesAndDurationArray = [
         let map = coursesAndDurationArray.map((value, index) => {
             return {
                 id: index + 1,
-                title: value.title,
-                monthDuration: value.monthDuration
+                ...value
             };
         });
         console.log(map);
@@ -219,7 +218,7 @@ console.log();
     {
         /* всі червоні карти */
         console.log(`Всі червоні карти`);
-        const allHearts = playingCard.filter(value1 => value1.cardSuit === 'heart');
+        const allHearts = playingCard.filter(value1 => value1.color === 'red');
         console.log(allHearts);
     }
 
