@@ -38,13 +38,15 @@ console.log();
 {
     console.log('Створити класс для об\'єктів Client з полями id, name, surname , email, phone, order (поле є масивом зі списком товарів)');
 
-    function Client(id, name, surname, email, phone, orders) {
-        this.id = id;
-        this.name = name;
-        this.surname = surname;
-        this.email = email;
-        this.phone = phone;
-        this.orders = orders;
+    class Client {
+        constructor(id, name, surname, email, phone, orders) {
+            this.id = id;
+            this.name = name;
+            this.surname = surname;
+            this.email = email;
+            this.phone = phone;
+            this.orders = orders;
+        }
     }
 
     console.log('Створити пустий масив, наповнити його 10 об\'єктами Client');
@@ -99,7 +101,7 @@ console.log();
         this.changeYear = function (newValue) {
             console.log(`Old year ${this.graduationYear}`)
             this.graduationYear = newValue;
-            console.log(`New yesr ${this.graduationYear}`)
+            console.log(`New year ${this.graduationYear}`)
         }
         this.addDriver = function (driver) {
             this.driver = driver;
@@ -180,7 +182,7 @@ console.log();
         changeYear(newValue) {
             console.log(`Old year ${this.graduationYear}`)
             this.graduationYear = newValue;
-            console.log(`New yesr ${this.graduationYear}`)
+            console.log(`New year ${this.graduationYear}`)
         }
 
         addDriver(driver) {
@@ -259,7 +261,7 @@ console.log();
 
     console.log('За допомоги циклу знайти яка попелюшка повинна бути з принцом.');
     for (const cinderellaElement of cinderellas) {
-        if(cinderellaElement.sizeFood === prince.sizeFoodFind){
+        if (cinderellaElement.sizeFood === prince.sizeFoodFind) {
             console.log(cinderellaElement);
             break;
         }
