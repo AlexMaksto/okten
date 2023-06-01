@@ -21,6 +21,8 @@ const hr = document.createElement('hr');
     // додати цей блок в body.
     body.appendChild(div);
 
+    body.appendChild(hr.cloneNode(true));
+
     // клонувати його повністю, та додати клон в body.
     body.appendChild(div.cloneNode(true));
 }
