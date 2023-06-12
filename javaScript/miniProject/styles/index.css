@@ -1,0 +1,32 @@
+/*
+    Стилізація:
+    index.html - всі блоки з user - по 2 в рядок. кнопки/посилання розташувати під інформацією про user.
+ */
+
+body {
+    margin: 0;
+
+}
+
+.users {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 20px;
+
+}
+
+.userList {
+    display: flex;
+    width: 45%;
+    flex-direction: column;
+    margin: 1%;
+    padding: 1%;
+    background-color: #D9D9D9;
+    align-items: center;
+}
+
+.userDetail {
+    width: 100px;
+}
+
