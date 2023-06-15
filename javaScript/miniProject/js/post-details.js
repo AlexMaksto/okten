@@ -7,13 +7,11 @@
     post-details.html - блок з інфою про пост зверху. Коментарі - по 4 в ряд.
  */
 
-import {info} from "./recurseBuildInfo.js";
-
 const body = document.body;
 const post = JSON.parse(localStorage.getItem('postMiniProject'));
+localStorage.removeItem('postMiniProject');
 
 if (!!post) {
-    // localStorage.removeItem('postMiniProject');
     buildPage();
 } else {
     window.location.assign("../html/404.html");
@@ -48,12 +46,32 @@ function buildComment(comments) {
     comments.forEach(comment => {
         const div = document.createElement('div');
         div.className = 'comment';
-        
+
         const ul = document.createElement('ul');
         info(comment, ul);
-        
+
         div.appendChild(ul)
         section.appendChild(div);
         body.appendChild(section);
     })
+}
+
+function info(obj, ul) {
+    for (const objKey in obj) {
+        const objValue = obj[objKey];
+        if (typeof objValue === 'object') {
+            const childUl = document.createElement('ul');
+            buildUl(objKey, '', ul)
+            info(objValue, childUl);
+            ul.appendChild(childUl);
+        } else {
+            buildUl(objKey, objValue, ul);
+        }
+    }
+}
+
+function buildUl(key, value, ul) {
+    const li = document.createElement('li');
+    li.innerHTML = value ? `<b>${key}:</b> ${value}` : `<b>${key}:</b>`;
+    ul.appendChild(li);
 }

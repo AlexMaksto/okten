@@ -10,8 +10,6 @@
     блоки з короткою інфою про post - в ряд по 5.
  */
 
-import {info} from "./recurseBuildInfo.js";
-
 const body = document.body;
 const id = new URL(document.URL).searchParams.get('id');
 
@@ -51,7 +49,7 @@ function buildButton(text) {
 }
 
 function listPost() {
-   fetch(`https://jsonplaceholder.typicode.com/users/${id}/posts`)
+    fetch(`https://jsonplaceholder.typicode.com/users/${id}/posts`)
         .then(response => response.json())
         .then(posts => buildPost(posts))
         .catch(error => {
@@ -91,4 +89,24 @@ function buildPost(posts) {
     })
 
     body.appendChild(section);
+}
+
+function info(obj, ul) {
+    for (const objKey in obj) {
+        const objValue = obj[objKey];
+        if (typeof objValue === 'object') {
+            const childUl = document.createElement('ul');
+            buildUl(objKey, '', ul)
+            info(objValue, childUl);
+            ul.appendChild(childUl);
+        } else {
+            buildUl(objKey, objValue, ul);
+        }
+    }
+}
+
+function buildUl(key, value, ul) {
+    const li = document.createElement('li');
+    li.innerHTML = value ? `<b>${key}:</b> ${value}` : `<b>${key}:</b>`;
+    ul.appendChild(li);
 }
